@@ -1,0 +1,26 @@
+.form {
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.myButton {
+  display: inline;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+}
+.form-control {
+  width: 90%;
+  display: inline;
+  outline: none;
+  border: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+@media (max-width: 576px) {
+  .form-control {
+    width: 70%;
+  }
+}

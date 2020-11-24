@@ -1,0 +1,47 @@
+.myList {
+  padding: 5px;
+  background-color: #e80368;
+  height: 55px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.message {
+  font-size: 20px;
+  color: #e80368;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 50%;
+}
+.myList:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 18px;
+}
+#link {
+  text-decoration: none;
+}
+.loadBtn {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 16%;
+}
+.cardBody p {
+  color: #0000ff;
+}
+input {
+  width: 100%;
+  border: 5px solid #000;
+}
+@media (max-width: 576px) {
+  .loadBtn {
+    top: 13%;
+    left: 20%;
+  }
+  .myList:hover {
+    font-size: 18px;
+  }
+}

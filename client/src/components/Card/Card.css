@@ -1,0 +1,54 @@
+.card {
+  height: auto;
+  width: 50%;
+  position: fixed;
+  box-shadow: 0 0 20px #000000;
+  transition: all 0.5s;
+  animation: myCard 0.5s ease-in-out;
+  border-radius: 10px;
+  padding: 20px;
+  top: 40%;
+  left: 40%;
+}
+@media (max-width: 576px) {
+  .card {
+    left: 0;
+    width: 100%;
+  }
+}
+.card:hover {
+  box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.25),
+    -5px -5px 20px 1px rgba(0, 0, 0, 0.22);
+  transform: scale(0.9, 0.9);
+}
+@keyframes myCard {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.error {
+  color: red;
+  font-weight: 800;
+  font-size: 20px;
+}
+.saveBtn {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 5%;
+}
+@media (max-width: 576px) {
+  .saveBtn {
+    top: 13%;
+    left: 60%;
+  }
+}
+input {
+  width: 100%;
+}
